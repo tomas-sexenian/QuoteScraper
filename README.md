@@ -4,7 +4,7 @@
 root/
 ├── docs/
 │  
-├── outputs/                  # Empty until the first execution is finished
+├── outputs/                  # Non existent until the first execution is finished
 │   ├── client.log            # Log file  
 │   ├── data.json             # Scraped data  
 │   └── qa_report.txt         # Quality assurance results  
