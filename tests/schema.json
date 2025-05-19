@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "author_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": ["name", "url"]
+      }
+    },
+    "goodreads_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "page": {
+      "type": "integer"
+    },
+    "page_url": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "required": [
+    "text",
+    "author",
+    "author_url",
+    "tags",
+    "goodreads_url",
+    "page",
+    "page_url"
+  ]
+}
